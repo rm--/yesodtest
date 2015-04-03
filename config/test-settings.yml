@@ -1,0 +1,2 @@
+database:
+  database: playground_test.sqlite3

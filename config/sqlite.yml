@@ -1,0 +1,20 @@
+Default: &defaults
+  database: playground.sqlite3
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: playground_test.sqlite3
+  <<: *defaults
+
+Staging:
+  database: playground_staging.sqlite3
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: playground_production.sqlite3
+  poolsize: 100
+  <<: *defaults
